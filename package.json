@@ -44,7 +44,7 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "@automapper/classes": "^8.3.6",
+        "@automapper/classes": "^8.3.7",
         "@automapper/core": "^8.3.6",
         "@automapper/nestjs": "^8.3.6",
         "@nestjs/common": "8.4.4",
