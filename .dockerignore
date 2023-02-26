@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Exclude tests folder and separate files
+test/
+*.spec.ts
+*.test.ts
+
+# Exclude distribution folder
+dist/
+
+# Exclude other files
+README.md
+Dockerfile
+.gitignore
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Serverless directories
+.serverless/
+
+# IDE folders
+.idea
+.vscode

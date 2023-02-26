@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: dims_postgres
+    image: postgres:13
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DATABASE}
+      POSTGRES_USER: ${USER}
+      POSTGRES_PASSWORD: ${USER}
+    networks:
+      - dims_network
+    restart: always
+
+volumes:
+    db-data:
+
+networks:
+  dims_network:
+    driver: bridge
